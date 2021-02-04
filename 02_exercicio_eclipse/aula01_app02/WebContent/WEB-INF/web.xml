@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+       *************************************************
+       * Java Reskilling - Projeto Capgemini           *
+       * Aula01 - Turma 01                             *
+       * Instrutor: Bruno                              *
+       * (codigo copiado e comentado)                  *
+       ************************************************* 
+-->
+       
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>aula01_app02</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  
+  <!-- no servlet-name voce coloca um nome qualque, este nome ira fazer o link dao servidor com a classe na hora de mapear ) -->
+  	<servlet-name> Dados </servlet-name>
+  	
+  <!-- no servlet-class voce coloca o caminho da classe que você vai usar -->
+  	<servlet-class> com.capgemini.DadosServlet </servlet-class>
+  	
+  </servlet>
+  
+  <servlet-mapping>
+  
+	<!-- no servlet-name dentro de mapear, voce coloca o nome do server que voce quer chamar -->
+    <servlet-name> Dados </servlet-name>
+
+	<!-- caminho que a pessoa vai chamar no browser para acessar a Servlet -->
+	<url-pattern> /dados </url-pattern>
+	
+  </servlet-mapping>
+  
+</web-app>

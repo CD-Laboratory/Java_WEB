@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Confirmar Presen&ccedil;a</title>
+	
+	<!-- importacao de arquvos:
+		 aqui realizamos a importacao de arquivos bootstrap e arquivos javas (o arquivo java no caso sao meus arquivos)
+	     as bibliotecas dessas importacoes devem ser inseridas no arquivo pom 
+	 -->
+	 
+	<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+	<link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet" />
+	<link th:href="@{/styles/main.css}" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- tudo o que tem essa expressao th: pertence ao thymeleaf do spring
+         ou seja nao e html puro
+     -->
+	<div th:replace="fragmentos/header :: header"></div>
+	
+	<section class="conteudo">
+		<div class="container-fluid">
+		
+			<div>
+            	<h2 class="titulo-confirmacao-presenca">Confirmação de presença</h2>
+				<h4 class="titulo-confirme-presenca">Confirme abaixo a sua presença no casamento de <span class="nomes-noivos">Fulana & Ciclano</span></h4>
+			</div>
+		
+        	<div class="row formulario">
+            	<div class="col-sm-4 col-sm-push-4">
+            	
+	               <!-- o th object faz ligacao com o objeto convidado, criado na classe confirmarPresensaController, dentro do modelAndView do
+	                    metodo mostrarPaginaConfirmartPresenca
+	                -->
+	               
+					<form method="POST" th:object="${convidado}" th:action="@{/listar-casamento/presenca-confirmada}">
+						<div class="form-group formulario">
+						
+							<div>
+						        <label for="presencaRadio1">Eu vou</label>
+						        <input type="radio" name="presencaRadios" id="presencaRadio1" value="1" th:field="*{presencaConfirmada}" />
+						        
+						        <label for="presencaRadio2">Não vou</label>
+						        <input type="radio" name="presencaRadios" id="presencaRadio2" value="0" th:field="*{presencaConfirmada}" />
+					        </div>
+					        
+							<label for="nome">Nome:</label>
+							<input type="text" class="form-control" id="nome" placeholder="Nome" th:field="*{nome}" />
+							
+							<label for="email">E-mail:</label>
+							<input type="text" class="form-control" id="email" placeholder="E-mail" th:field="*{email}" />
+							
+							<label for="telefone">Telefone:</label>
+							<input type="text" class="form-control" id="telefone" placeholder="Telefone" th:field="*{telefone}" />
+							
+							<label for="adultos">Adultos:</label>
+							<input type="text" class="form-control" id="adultos" placeholder="Qtde. Adultos" th:field="*{quantidadeAdultos}" />
+							
+							<label for="criancas">Crianças (até 10 anos):</label>
+							<input type="text" class="form-control"	id="criancas" placeholder="Qtde. Crianças" th:field="*{quantidadeCriancas}" />
+							
+							<label for="mensagem">Mensagem:</label>
+							<textarea rows="4" cols="50" class="form-control" id="mensagem" placeholder="Mensagem" th:field="*{mensagem}" />
+							
+							<button type="submit" class="btn btn-danger botao">Adicionar</button>
+						</div>
+					</form>
+							
+            	</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+</html>

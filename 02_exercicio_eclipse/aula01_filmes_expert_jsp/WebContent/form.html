@@ -1,0 +1,46 @@
+<!-- 
+* *************************************************
+ *  Java Reskilling - Projeto Capgemini           *
+ *	Aula01 - Turma 01                             *
+ *	Instrutor: Bruno                              *
+ *	(codigo copiado e comentado)                  *
+ * ************************************************
+ -->
+ 
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+  <head>
+		<meta charser="UTF-8"/>
+		<title> Formulario de Filmes </title>
+  </head>
+	
+  <body>
+	<h1>Formuláro de filmes </h1>
+
+    <!-- no action do formulario voce coloca o nome definido na url-pattern
+    do arquivo web.xml (tem que ser a url do servlet uqe voce quer que a pagina
+    acesse) -->
+    
+	<form action="selecionarfilme.do " method="post">
+		<p> Selecione a categoria </p>
+		
+		Categoria:
+		
+		<!-- aqui estara a opcao de categoria que o servlet ira receber, no caso 
+		o name="categoria" do select sera enviado para o servlet após o value ser
+		 escolhido -->
+		 
+		<select name="categoria" size="1">
+			<option value="terror"> Terror </option>
+			<option value="acao"> Ação </option>
+			<option value="comedia"> Comédia </option>
+			<option value="suspense"> Suspense </option>
+		</select>
+		
+		<br><br>
+		
+		<button type="submit">Enviar</button>
+	</form>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+       *************************************************
+       * Java Reskilling - Projeto Capgemini           *
+       * Aula01 - Turma 01                             *
+       * Instrutor: Bruno                              *
+       * (codigo copiado e comentado)                  *
+       ************************************************* 
+-->
+
+
+<web-ap xmlns="http://java.sun.com/xml/ns/j2ee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<servlet>
+		<!-- no servlet-name voce coloca um nome qualque, este nome ira fazer o link dao servidor com a classe na hora de mapear -->
+		<servlet-name> Primeira </servlet-name>
+
+		<!-- no servlet-class voce coloca o caminho da classe que você vai usar -->
+		<servlet-class> PrimeiraServlet </servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<!-- no servlet-name dentro de mapear, voce coloca o nome do server que voce quer chamar -->
+		<servlet-name> Primeira </servlet-name>
+
+		<!-- caminho que a pessoa vai chamar no browser para acessar a Servlet -->
+		<url-pattern> /app1 </url-pattern>
+	</servlet-mapping>
+</web-ap>

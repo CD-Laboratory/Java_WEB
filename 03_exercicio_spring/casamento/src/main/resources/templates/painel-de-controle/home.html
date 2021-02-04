@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Minha Lista</title>
+	<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+	<link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet" />
+	<link th:href="@{/styles/main.css}" rel="stylesheet" />
+	<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</head>
+
+<body>
+	
+	<div th:replace="fragmentos/header :: header"></div>
+	
+	<section class="conteudo">
+		<div class="container-fluid">
+		
+			<div>
+				<h3 class="titulo-confirmacao-lista">Quem já confirmou presença</h3>
+			</div>
+		
+        	<div class="row lista">
+        		<div class="col-sm-1"></div>
+            	<div class="col-sm-10">
+            		<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Nome</th>
+								<th>E-mail</th>
+								<th>Telefone</th>
+								<th>Adultos</th>
+								<th>Crianças(até 10 anos)</th>
+								<th>Confirmado</th>
+								<th>Mensagem</th>
+							</tr>
+						</thead>
+						<tbody>
+						<!-- esse th each é o loog for do thymeleaf -->
+							<tr th:each="convidado : ${convidados}">
+								<td th:text="${convidado.nome}"></td>
+								<td th:text="${convidado.email}"></td>
+								<td th:text="${convidado.telefone}"></td>
+								<td th:text="${convidado.quantidadeAdultos}"></td>
+								<td th:text="${convidado.quantidadeCriancas}"></td>
+								
+								<!-- aqui valida se a presenca foi confirmada ou nao, se vier true retorna sim senao retorna nao -->
+								<td th:text="${convidado.presencaConfirmada} ? 'Sim' : 'Não'"></td>
+								
+								<!-- manda para um pop up que esta em modal -->
+								<td>
+									<a href="#modalParaMensagem" data-toggle="modal" data-target="#modalParaMensagem" 
+										th:attr="data-object-msg=${convidado.mensagem}" class="btn btn-large">Ver</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+            	<div class="col-sm-1"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modalParaMensagem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Mensagem</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div id="conteudo-modal"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary"	data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		$('#modalParaMensagem').on('show.bs.modal', function (event) {
+			var linkClicado = $(event.relatedTarget) // Link que abriu o modal
+		  	var mensagem = linkClicado.data('object-msg') // Extrair info do atributo data-*
+		  	var modal = $(this)
+		  	modal.find('#conteudo-modal').text(mensagem)
+		})
+	</script>
+
+</body>
+
+</html>

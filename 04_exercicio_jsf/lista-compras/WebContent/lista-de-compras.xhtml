@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:body>
+	<ui:composition template="/WEB-INF/_template.xhtml">
+
+		<ui:define name="conteudo">
+
+			<h:form class="form">
+				<fieldset>
+					<legend>Dados da Compra</legend>
+
+					<p:growl id="growl" life="2000" />
+
+					<p:messages id="msgs" />
+
+					<p:inputText value="#{gerenciadorDeComprasBean.compra.id}"
+						type="hidden" />
+
+					<div class="form-div">
+						<h:outputLabel for="produto" value="Produto:" class="label" />
+						<p:inputText id="produto"
+							value="#{gerenciadorDeComprasBean.compra.produto}" label="Produto">
+						</p:inputText>
+					</div>
+
+					<div class="form-div">
+						<h:outputLabel for="prioridade" value="Prioridade da Compra:" class="label" />
+						<p:selectOneMenu id="prioridade"
+							value="#{gerenciadorDeComprasBean.compra.prioridadeCompra}"
+							style="width:125px">
+							<f:selectItems value="#{gerenciadorDeComprasBean.prioridades}" />
+							<f:facet name="footer">
+								<p:separator />
+								<h:outputText value="3 prioridades" style="font-weight:bold;" />
+							</f:facet>
+						</p:selectOneMenu>
+					</div>
+
+					<div class="form-div">
+						<h:outputLabel for="preco" value="Preço:" class="label" />
+						<p:inputText id="preco"
+							value="#{gerenciadorDeComprasBean.compra.preco}" label="Preco">
+							<f:convertNumber pattern="#,##0.00" />
+						</p:inputText>
+					</div>
+
+
+					<div class="form-div">
+						<p:commandButton value="Salvar" id="salvar-compra" update="@all"
+							action="#{gerenciadorDeComprasBean.salvarCompra}"
+							style="margin-right:20px;" styleClass="ui-priority-primary" />
+					</div>
+
+				</fieldset>
+				
+				<h2>Lista de Compras</h2>
+
+				<h:dataTable value="#{gerenciadorDeComprasBean.listaDeCompra}" var="compra"
+					id="compras">
+					<h:column>
+						<f:facet name="header">ID</f:facet>
+							#{compra.id}
+					</h:column>
+
+					<h:column>
+						<f:facet name="header">Produto</f:facet>
+							#{compra.produto}
+					</h:column>
+
+
+					<h:column>
+						<f:facet name="header">Prioridade</f:facet>
+							#{compra.prioridadeCompra}
+					</h:column>
+
+					<h:column>
+						<f:facet name="header">Preço</f:facet>				
+						<h:outputText  value="#{compra.preco}">
+                            <f:convertNumber currencySymbol = "$" type = "currency" />
+                        </h:outputText >
+					</h:column>
+
+					<h:column>
+						<p:commandLink id="alterar" update="@all"
+							action="#{gerenciadorDeComprasBean.atualizarCompra(compra)}"
+							style="margin-right:20px;" process="@this">
+							<h:outputText value="Alterar" />
+						</p:commandLink>
+					</h:column>
+
+					<h:column>
+						<p:commandLink id="excluir" update="@all"
+							action="#{gerenciadorDeComprasBean.excluirCompra(compra)}"
+							style="margin-right:20px;" immediate="true">
+							<h:outputText value="Excluir" />
+						</p:commandLink>
+					</h:column>
+				</h:dataTable>
+								
+			</h:form>
+			
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

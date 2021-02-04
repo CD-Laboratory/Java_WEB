@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<!-- aqui e o template que sera usado em todas as paginas
+     no caso ele possui o estilo das paginas, menu, cabeçalho ... 
+-->
+<h:head>
+	<title>Lista de Tarefas</title>
+	
+	<!-- aqui e importado o codigo css e as fontes do google -->
+	<h:outputStylesheet library="css" name="styles.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900"
+		rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300"
+		rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Metal+Mania" rel="stylesheet"/> 
+</h:head>
+
+<h:body>
+
+	<header class="header">
+		<h1 class="titulo">Gerenciador de Tarefas</h1>
+	</header>
+ 
+    <!-- aqui eu informo os conteudos que vai nesse pedaco, ele soa textos variados, pois cada pagina tem o seu conteudo -->
+	<div>
+		<ui:insert name="conteudo" />
+	</div>
+
+</h:body>
+</html>	

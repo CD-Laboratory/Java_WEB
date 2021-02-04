@@ -1,0 +1,82 @@
+24-Dec-2020 08:59:26.473 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.61
+24-Dec-2020 08:59:26.475 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 3 2020 14:03:28 UTC
+24-Dec-2020 08:59:26.477 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.61.0
+24-Dec-2020 08:59:26.477 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Dec-2020 08:59:26.477 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Dec-2020 08:59:26.477 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Dec-2020 08:59:26.477 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_271\jre
+24-Dec-2020 08:59:26.477 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_271-b09
+24-Dec-2020 08:59:26.477 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Dec-2020 08:59:26.477 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61
+24-Dec-2020 08:59:26.477 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61
+24-Dec-2020 08:59:26.478 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\conf\logging.properties
+24-Dec-2020 08:59:26.478 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Dec-2020 08:59:26.478 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Dec-2020 08:59:26.478 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Dec-2020 08:59:26.478 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+24-Dec-2020 08:59:26.478 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61
+24-Dec-2020 08:59:26.478 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61
+24-Dec-2020 08:59:26.478 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\temp
+24-Dec-2020 08:59:26.479 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+24-Dec-2020 08:59:26.479 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+24-Dec-2020 08:59:26.479 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Dec-2020 08:59:26.489 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+24-Dec-2020 08:59:26.619 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Dec-2020 08:59:26.795 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Dec-2020 08:59:26.809 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 799 ms
+24-Dec-2020 08:59:26.855 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Dec-2020 08:59:26.855 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.61
+24-Dec-2020 08:59:26.866 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\aula01]
+24-Dec-2020 08:59:27.136 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\aula01] has finished in [269] ms
+24-Dec-2020 08:59:27.136 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\docs]
+24-Dec-2020 08:59:27.173 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\docs] has finished in [37] ms
+24-Dec-2020 08:59:27.173 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\examples]
+24-Dec-2020 08:59:27.680 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\examples] has finished in [507] ms
+24-Dec-2020 08:59:27.681 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\host-manager]
+24-Dec-2020 08:59:27.727 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\host-manager] has finished in [46] ms
+24-Dec-2020 08:59:27.727 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\manager]
+24-Dec-2020 08:59:27.776 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\manager] has finished in [48] ms
+24-Dec-2020 08:59:27.776 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\ROOT]
+24-Dec-2020 08:59:27.827 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\ROOT] has finished in [51] ms
+24-Dec-2020 08:59:27.829 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Dec-2020 08:59:27.838 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 1028 ms
+24-Dec-2020 09:29:25.121 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.61
+24-Dec-2020 09:29:25.124 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 3 2020 14:03:28 UTC
+24-Dec-2020 09:29:25.125 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.61.0
+24-Dec-2020 09:29:25.125 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Dec-2020 09:29:25.125 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Dec-2020 09:29:25.125 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Dec-2020 09:29:25.125 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_271\jre
+24-Dec-2020 09:29:25.126 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_271-b09
+24-Dec-2020 09:29:25.126 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Dec-2020 09:29:25.126 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61
+24-Dec-2020 09:29:25.126 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61
+24-Dec-2020 09:29:25.126 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\conf\logging.properties
+24-Dec-2020 09:29:25.126 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Dec-2020 09:29:25.126 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Dec-2020 09:29:25.126 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Dec-2020 09:29:25.127 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+24-Dec-2020 09:29:25.127 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61
+24-Dec-2020 09:29:25.127 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61
+24-Dec-2020 09:29:25.127 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\temp
+24-Dec-2020 09:29:25.127 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+24-Dec-2020 09:29:25.127 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+24-Dec-2020 09:29:25.127 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Dec-2020 09:29:25.139 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+24-Dec-2020 09:29:25.274 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Dec-2020 09:29:25.481 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Dec-2020 09:29:25.490 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 725 ms
+24-Dec-2020 09:29:25.529 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Dec-2020 09:29:25.529 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.61
+24-Dec-2020 09:29:25.539 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\docs]
+24-Dec-2020 09:29:25.763 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\docs] has finished in [224] ms
+24-Dec-2020 09:29:25.764 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\examples]
+24-Dec-2020 09:29:26.308 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\examples] has finished in [544] ms
+24-Dec-2020 09:29:26.309 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\host-manager]
+24-Dec-2020 09:29:26.344 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\host-manager] has finished in [35] ms
+24-Dec-2020 09:29:26.345 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\manager]
+24-Dec-2020 09:29:26.413 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\manager] has finished in [68] ms
+24-Dec-2020 09:29:26.413 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\ROOT]
+24-Dec-2020 09:29:26.462 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\jessicsi\Desktop\01_turma\02_exercicio_eclipse\servidor\apache-tomcat-8.5.61\webapps\ROOT] has finished in [49] ms
+24-Dec-2020 09:29:26.465 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Dec-2020 09:29:26.480 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 990 ms
